@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="card">
+      <img [src]="user?.avatar || 'assets/user-avatar.jpg'" alt="User Avatar" class="avatar">      
+      <div class="name">{{ user?.first_name }} {{ user?.last_name }}</div>
+      <div class="email">{{ user?.email }}</div>
+    </div>
+    <button class="btn" (click)="goBack()" appTooltip [tooltipText]="'Go to users List'">Back</button>
+  </div>
